@@ -14,134 +14,9 @@
 
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		<link rel="stylesheet" type="text/css" href="flipcountdown/jquery.flipcountdown.css" />
-				<script type="text/javascript" src="flipcountdown/jquery.flipcountdown.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
 
-		<style>
-			body{
-				margin: 0;
-				padding: 0;
-				color: #666F77;
-				font-family: helvetica, arial, serif;
-			}
-			.navbar{
-				margin: 0;
-				border-radius: 0;
-			}
-			.topContainer{
-				background-image: url('images/bible.jpg');
-				background-size: cover;
-				width: 100%;
-				height: 650px;
-			}
-			.title{
-				font-size: 3em;
-				margin: 50px 0 50px 0;
-				text-align: center;
-			}
-			.donateForm{
-				margin-top: 200px;
-			}
-			.donateBtn{
-				width: 150px;
-				height: 50px;
-				font-size: 1.4em;
-
-			}
-			#retroclockbox_float{
-				/*pad*/
-			}
-			#contentContainer{
-				margin-bottom: 75px;
-			}
-			p{
-				font-size: 1.4em;
-			}
-			/*img{
-				width: 450px;
-				height: 300px;
-			}*/
-			.marginBottom{
-				margin-bottom: 100px;
-			}
-			.topRow h1{
-				margin-top: 250px;
-			}
-			.topRow h2{
-				text-align: right;
-			}
-			.topRow h1,h2{
-				text-align: center;
-				font-style: italic;
-				color: #FFFFFF;
-			}
-			.topContainer input[type|="image"]{
-				margin-top: 200px;
-				width: 175px;
-			}
-			#about input[type|="image"]{
-				width: 175px;
-			}
-			#contact{
-				background-color: #222222;
-				color: #FFFFFF;
-				padding-top: 15px;
-				padding-bottom: 50px;
-			}
-			#contact h1{
-				text-align: center;
-				margin-bottom: 40px;
-			}
-			.progressbar{
-				counter-reset: step;
-			}
-			.progressbar li{
-				list-style-type: none;
-				float: left;
-				width: 25%;
-				position: relative;
-				text-align: center;
-				font-weight: 700;
-
-			}
-			.progressbar li:before{
-				content: counter(step);
-				counter-increment: step;
-				width: 40px;
-				height: 40px;
-				line-height: 40px;
-				border: 2px solid #ddd;
-				border-radius: 50%;
-				display: block;
-				text-align: center;
-				margin: 0 auto 10px auto;
-				background-color: #fff;
-			}
-			.progressbar li:after{
-				content: '';
-				position: absolute;
-				width: 100%;
-				height: 2px;
-				background-color: #ddd;
-				top: 15px;
-				left: -50%;
-				z-index: -1;
-			}
-			.progressbar li:first-child:after{
-				content: none;
-
-			}
-			.progressbar li:active{
-				color: green;
-			}
-			.progressbar li.active:before{
-				border-color: green;
-			}
-			.progressbar li.active + li:after{
-				background-color: green;
-			}
-			
-		</style>
+		
 	</head>
 
 	<body>
@@ -169,14 +44,14 @@
 		</div>
 
 		<div class="container topContainer" id="contentContainer">
-			<div class="row topRow">
+			<div class="row caption">
 				<div class="col-md-6 col-md-offset-3">
 					<h1>Give, and it will be given unto you</h1>
 					<h2>-Luke 6:38</h2>
 				</div>		
 			</div>
 			<div class="row">
-				<div class="col-md-6 col-md-offset-5 col-sm-offset-4">
+				<div class="col-md-6 col-md-offset-5 col-sm-offset-4 col-xs-offset-2">
 					<form  class="donateForm" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 						<input type="hidden" name="cmd" value="_s-xclick">
 						<input type="hidden" name="hosted_button_id" value="Q8P5HRMJDP8C6">
@@ -221,7 +96,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6 col-md-offset-5 col-sm-offset-4">
+				<div class="col-md-6 col-md-offset-5 col-sm-offset-4 col-xs-offset-4">
 					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 						<input type="hidden" name="cmd" value="_s-xclick">
 						<input type="hidden" name="hosted_button_id" value="Q8P5HRMJDP8C6">
@@ -243,19 +118,19 @@
 					  <div class="form-group">
 					    <label for="inputName" class="col-sm-2 control-label">Name</label>
 					    <div class="col-sm-10">
-					      <input type="text" class="form-control" id="inputName" placeholder="John Smith" required="true">
+					      <input type="text" name="name" class="form-control" id="inputName" placeholder="John Smith" required="true">
 					    </div>
 					  </div>
 					  <div class="form-group">
 					    <label for="inputEmail" class="col-sm-2 control-label">Email</label>
 					    <div class="col-sm-10">
-					      <input type="email" class="form-control" id="inputEmail" placeholder="jsmith@gmail.com" required="true">
+					      <input type="email" name="email" class="form-control" id="inputEmail" placeholder="jsmith@gmail.com" required="true">
 					    </div>
 					  </div>
 					  <div class="form-group">
 					  	<label for="inputeMessage" class="col-sm-2 control-label">Message</label>
 					  	<div class="col-sm-10">
-					  		<textarea name="inputMessage" id="inputMessage" rows="8" class="form-control" placeholder="Message" required="true"></textarea>
+					  		<textarea name="message" id="inputMessage" rows="8" class="form-control" placeholder="Message" required="true"></textarea>
 					  	</div>
 					  </div>
 					  <div class="form-group">
@@ -276,13 +151,3 @@
 				
 	</body>
 </html>
-
-<script>
-	$(document).ready(function(){
-		jQuery('#retroclockbox_float').flipcountdown({
-			size:"lg",
-			tick: 300000.59
-		});
-	});
-	
-</script>
