@@ -188,6 +188,7 @@
 		
 		<div class="container marginBottom" id="about">
 			<div class="row">
+				<div class="col-md-12">
 					<div class="progressbar">
 						<ul>
 							<li class="active">$100,000</li>
@@ -196,6 +197,8 @@
 							<li>$1,000,000</li>
 						</ul>
 					</div>
+				</div>
+					
 				<!-- <div class="col-md-6 col-md-offset-4" id="retroclockbox_float"></div> -->
 			</div>
 			<div class="row">
