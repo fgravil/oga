@@ -66,7 +66,11 @@
 		      </div>
 		    </div>
 		    <div class="item">
+<<<<<<< HEAD
+		      <img src="images/kids.jpg" alt="...">
+=======
 		      <img src="images/kids.JPG" alt="...">
+>>>>>>> 8ed7edc603887567fcb4835fa9790f33edba60c8
 		      <div class="carousel-caption caption">
 		        <h1>Give, and it will be given unto you</h1>
 				<h2>-Luke 6:38</h2>
